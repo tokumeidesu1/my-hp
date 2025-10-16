@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>ろうでぃが作ったホームページ</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .horizontal-scroll {
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid gray;
+      background-color: transparent;
+      border-radius: 0px;
+    }
+    .horizontal-scroll p {
+      font-size: 18px;
+      font-weight: 400;
+      color: blue;
+      display: inline-block;
+      padding-left: 100%;
+      white-space: nowrap;
+      line-height: 1.5em;
+      animation: scroll 10s linear infinite;
+    }
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    .btn-flat-border {
+      display: inline-block;
+      padding: 0.3em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+    }
+    .btn-flat-border:hover {
+  background: #67c5ff;
+  color: white;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="horizontal-scroll">
+    <p>ようこそ、ろうでぃの作ったホームページへ</p>
+  </div>
+
+  <img src="aikon.png" alt="ろうでぃのアイコン" width="200" />
+  <h1>SNS一覧</h1>
+  <ul style="text-align: left;">
+   <li>
+  <a href="https://www.youtube.com/@loudhi" target="_blank" rel="noopener noreferrer">
+    YouTubeチャンネル
+  </a>
+</li>
+</ul>
+  <a href="sitemap.html" class="btn-flat-border">サイトマップ</a>
+</body>
+</html>
