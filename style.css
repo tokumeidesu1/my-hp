@@ -2,9 +2,14 @@
   border: 1px solid #000;
   padding: 1rem 1.5rem;
   broder-radius: 1rem;
-
+  &:hover .toggle {
+    grid-templat-rows: 1fr;
   h2 {
     font-size: 1.5rem;
     font-weight: 600;
   }
+}
+.toggle {
+  display: grid;
+  grid-template-rows: 0fr;
 }
